@@ -13,7 +13,7 @@ Contém anotações, exemplos e exercícios resolvidos.
   - Number
   - String
   - Boolean
-  - Undefined & Null
+  - Undefined e Null
   - Infinity
   - NaN
   - Introdução Array
@@ -26,7 +26,7 @@ Contém anotações, exemplos e exercícios resolvidos.
   - Comparação
   - Lógicos
   - Bit a Bit
-  - Incremento & Decremento
+  - Incremento e Decremento
  
 - ### Estruturas de Decisão
   - If e Else
