@@ -18,18 +18,3 @@ console.log(Boolean(NaN))
 console.log(Boolean(undefined))
 console.log(Boolean(numero = false))
 
-// And
-console.log(true && true)
-console.log(true && false)
-console.log(false && true)
-console.log(false && false)
-
-// Or
-console.log(true || true)
-console.log(true || false)
-console.log(false || true)
-console.log(false || false)
-
-// Negation
-console.log(!true)
-console.log(!false)
