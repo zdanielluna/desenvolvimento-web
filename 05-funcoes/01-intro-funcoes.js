@@ -1,26 +1,25 @@
 /* Funções são subrotinas utilizadas em um programa, em JavaScript elas são
-   tratadas como dados, isso permite que elas sejam utilizadas de diversas formas.
-
-    Funções JavaScript, podem:
-
-      1- Ser armazenadas dentro de um array.
-
-      2- Ser armazenadas dentro de atributos de objetos.
-
-      3- Ser passadas como parâmetro.
-
-      4- Retornar e conter outra função.   
-*/
+   tratadas como dados, isso permite que elas sejam utilizadas de diversas formas. */
 
 // Parâmetros e retornos são opcionais em JS.
+function somaTudo() {
+  let soma = 0
+  for (i in arguments) {
+    soma += arguments[i]
+  }
+  return soma
+}
+
+console.log(somaTudo(5, 4, 3, 10, 25, -12, 'Batata', 'Música', '25', '30'))
+
+// Se nada for retornado de forma intensional, a função retorna undefined por padrão
 function soma(a, b) {
   a + b
 }
 
-// Se nada for retornado de forma intensional, a função retorna undefined por padrão
 console.log(soma())
 
-// Quando invocada, só irá considerar os três primeiros parâmetros
+// Quando invocada, só irá considerar apenas os três primeiros parâmetros
 function multiplica(a, b, c) {
   return a * b * c
 }
@@ -35,12 +34,13 @@ function subtrai(a, b) {
 console.log(subtrai(5))
 
 // Funções anonimas não dependem de nome, são declaradas e armazenadas em variáveis
-let funcao = function () {
-  console.log("Função anônima")
+let calculaArea = function (base, altura) {
+  return `base x altura = ${base * altura}`
 }
-funcao()
 
-// Armazenar função em um array
+console.log(calculaArea(5, 10))
+
+// Armazena em um array
 let retornaOMaisForte = function () {
   return "Goku"
 }
@@ -56,7 +56,7 @@ const personagens = [
 
 console.log(personagens)
 
-// Armazenar uma função no atributo do objeto
+// Armazena no atributo do objeto
 const pessoa = {
   nome: function () {
     return "Thomas Shelby"
@@ -65,7 +65,7 @@ const pessoa = {
 
 console.log(pessoa.nome())
 
-// Passar uma função como parâmetro de outra função
+// Recebe uma função como parâmetro
 function teste(funcao) {
   funcao()
 }
@@ -74,7 +74,7 @@ teste(function () {
   console.log("Executando...")
 })
 
-// Uma função pode retornar outra função
+// Retorna outra função
 function soma(a, b) {
   return function (c) {
     console.log(a + b + c)
