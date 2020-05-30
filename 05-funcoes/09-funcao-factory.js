@@ -12,8 +12,8 @@
 
 function criarPessoa() {
   return {
-    nome: "Daniel",
-    sobrenome: "Luna",
+    nome: 'Daniel',
+    sobrenome: 'Luna',
   }
 }
 
@@ -25,9 +25,9 @@ function criarjogos(nome, preco) {
 }
 
 const jogos = [
-  criarProduto("Skyrim", 90),
-  criarProduto("Overwatch", 60),
-  criarProduto("Rainbow Six Siege", 30),
+  criarjogos('Skyrim', 90),
+  criarjogos('Overwatch', 60),
+  criarjogos('Rainbow Six Siege', 30),
 ]
 
-console.log(produtos)
+console.log(jogos)
