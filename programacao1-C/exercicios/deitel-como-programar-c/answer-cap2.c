@@ -397,6 +397,7 @@ int exercicio2_11() {
    */
 }
 
+// Resolve o exercício 2.12
 int exercicios2_12() {
    /*
    a) 2
@@ -411,14 +412,134 @@ int exercicios2_12() {
    */
 }
 
+// Resolve o exercício 2.13
 int exercicio2_13() {
    /* A leitura destrutiva ocorre nas letras a, b e d.*/
+
+   return 0;
 }
 
+// Resolve o exercício 2.14
+int exercicio2_14() {
+   /* Alternativa e)*/
+
+   return 0;
+}
+
+// Resolve o exercício 2.15
+int exercicio2_15() {
+   /* a) 1º Multiplicação, 2º Divisão, 3º Adição, 4º Subtração. x = 15
+      b) 1º Modulo/resto, 2º Multiplicação, 3º Divisão, 4º Adição, 5º Subtração. x = 3
+      c) 1º (3); 
+         2º Multiplicação 9 x 3;
+         3º Divisão 27 / 3;
+         4º Adição 3 + 9;
+         5º Multiplicação 3 * 9;
+         6º Multiplicação 27 * 12;
+         x = 324
+   */ 
+
+   return 0;
+}
+
+// Resolve o exercício 2.16
+int exercicio2_16() {
+   int a, b, soma, produto, quociente, restoDivisao, diferenca;
+
+   printf("Digite dois números:\n");
+   scanf("%d %d", &a, &b);
+
+   soma = a + b;
+   produto = a * b;
+   diferenca = a - b;
+   quociente = a / b;
+   restoDivisao = a % b;
+
+   printf("soma = %d\nproduto = %d\ndiferença = %d\nquociente = %d\nResto da divisão = %d\n", soma, produto, diferenca, quociente, restoDivisao);
+
+   return 0;
+}
+
+// Resolve o exercício 2.17
+int exercicio2_17() {
+   int a = 1, b = 2, c = 3, d = 4;
+
+   printf("1, 2, 3, 4\n");
+   printf("%d, %d, %d, %d,\n", a, b, c, d);
+   printf("1\n");
+   printf("2\n");
+   printf("3\n");
+   printf("4\n");
+
+   return 0;
+}
+
+int exercicio2_18() {
+   int a, b;
+
+   printf("Insira dois números inteiros:\n");
+   scanf("%d %d", &a, &b);
+
+   if (a > b) {
+      printf("%d é maior\n", a);
+   } else if (b > a) {
+      printf("%d é maior\n", b);
+   } else {
+      printf("Estes números são iguais\n");
+   }
+   
+   return 0;
+}
+
+int exercicio2_19() {
+   int x, y, z, soma, produto, media, menor, maior;
+
+   printf("Insira três números inteiros distintos:\n");
+   scanf("%d %d %d", &x, &y, &z);
+
+   soma = x + y + z;
+   produto = x * y * z;
+   media = (x + y + z) / 3;
+
+   printf("Soma = %d\nProduto = %d\nMedia = %d\n", soma, produto, media);
+
+   if (z > y && z > x) {
+      maior = z;
+   } else {
+      menor = z;
+   } if (y > z && y > x) {
+      maior = y;
+   } else {
+      menor = y;
+   } if (x > y && x > z) {
+      maior = x;
+   } else {
+      menor = x;
+   }
+
+   printf("Maior número = %d\nMenor número = %d\n", maior, menor);
+
+   return 0;
+}
+
+int exercicio2_20() {
+   float pi = 3.14159 , raio, diametro, circunferencia, area = pi * (raio * raio);
+
+   printf("*** Info-Círculo***\n");
+   printf("Digite o valor do raio:\n");
+   scanf("%f", &raio);
+
+   diametro =  2 * raio;
+   circunferencia = pi * diametro;
+   area = pi * (raio * raio);
+
+   printf("Diâmetro = %f\nCircunferência = %f\nÁrea = %f\n", diametro, circunferencia, area);
+
+   return 0;
+}
 
 int main() {
-   int x = 2, y = 3;
-   printf("\n");
-  
+   exercicio2_20();
+   
    return 0;
 }
