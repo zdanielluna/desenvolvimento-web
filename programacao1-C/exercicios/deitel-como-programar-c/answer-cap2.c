@@ -1,37 +1,47 @@
-/* Exercícios de Revisão
+// Como Programar em C, Deitel
+// Exercícios de Revisão do Cap 2 
 
-2.1 a) Todos os programas em C começam sua execução com a função main().
-    b) {} Determina o início e fim do corpo de uma função.
-    c) Todas as instruções terminam com um ;
-    d) A função printf da biblioteca padrão exibe informações na tela.
-    e) A sequência de escape \n representa o caractere de nova linha que faz com que o cursor
-       se posicione no início da próxima linha na tela.
-    f) A função scanf da biblioteca padrão é utilizada para obter dados do teclado.
-    g) O especificador de conversão %d é usado em uma string de controle de formato scanf para indicar
-       que a impressão (saída) de um inteiro pelo programa.
-    h) Sempre que um valor novo é colocado em uma posição da memória, ele substitui o valor anterior ali presente.
-       Esse processo é conhecido como leitura destrutiva.
-    i) Quando um valor é lido de uma posição na memória, ele é preservado, isso é chamado de leitura não destrutiva.
-    j) A instrução if é usada na tomada de decisões.
-
-2.2 a) Falso, pois a instrução printf inicia a partir de onde o cursor estar posicionado, por isso utilizar a sequência
-       de escape \n é uma boa prática de programação.
-    b) Falso. Os comentários não são lidos.
-    c) Verdadeiro.
-    d) Verdadeiro.
-    e) Falso. Elas podem receber uma atribuição em uma outra linha que não seja a da sua declaração.
-    f) Falso. o C é uma linguagem case-sensitive, distingue letras maiúsculas de menúsculas.
-    g) Falso. As declarações devem estar depois de qualquer instrução executável e aparecer depois da chave esquerda
-       corpo de uma função.
-    h) Falso. Na função scanf precisa, pois o e-comercial é um operador utilizado para indicar o endereço de memória para qual
-       a variável foi alocada.
-    i) Verdadeiro.
-    j) Falso. Os operadores aritméticos * / e % possuem o mesmo nível de precedência, todos eles prioritários em relação
-       ao + e -.
-    k) Falso. O indicado são apenas 31 caracteres.
-    l) Falso. Um programa pode ter 3 linhas de saídas utilizando apenas um único printf, por tanto que faça uso do
-       da sequência de escape \n.
+/* 2.1 Preencha as lacunas de cada uma das frases seguintes:
+      a) Todos os programas em C começam sua execução com a função ________________.
+      b) A ________________ começa o corpo de todas as funções e a o termina.
+      c) Todas instruções terminam com um ________________.
+      d) A função ________________ da biblioteca padrão exibe informações na tela.
+      e) A seqüência de escape \n representa o caractere de ________________ que faz com que o
+      cursor se posicione no início da próxima linha na tela.
+      f) A função ________________ da biblioteca padrão é usada para obter dados do teclado.
+      g) O especificador de conversão ________________ é usado em uma string de controle de
+      formato de scanf para indicar que um inteiro será fornecido ao programa e em uma string de
+      controle de formato de printf para indicar a impressão (saída) de um inteiro pelo programa.
+      h) Sempre que um valor novo é colocado em uma posição da memória, ele substitui o valor
+      anterior ali presente. Esse processo é conhecido como leitura ________________ .
+      i) Quando um valor é lido de uma posição na memória, ele é preservado; isso é chamado
+      leitura ________________.
+      j) A instrução ________________ é usada na tomada de decisões.
 */
+
+/* 2.2 Diga se cada uma das afirmações seguintes é verdadeira ou falsa. Se for falsa, explique por quê.
+      a) Quando a função printf é chamada, ela sempre começa a imprimir no início de uma nova
+      linha.
+      b) Os comentários fazem com que o computador imprima na tela o texto situado entre e 
+      quando o programa é executado.
+      c) A seqüência de escape \n, quando usada em uma string de controle de formato de printf,
+      faz com que o cursor se posicione no início da próxima linha na tela.
+      d) Todas as variáveis devem ser declaradas antes de serem usadas.
+      e) Todas as variáveis devem receber a atribuição de um tipo ao serem declaradas.
+      f) O C considera idênticas as variáveis numero e NuMeRo.
+      g) As declarações podem aparecer em qualquer lugar do corpo de uma função.
+      h) Todos os argumentos após a string de controle de formato em uma função printf devem
+      ser precedidos por um e-comercial (&).
+      i) O operador resto (%) só pode ser usado com operadores inteiros.
+      j) Os operadores aritméticos *, /, % e - possuem o mesmo nível de precedência.
+      k)Verdadeiro ou falso: Os nomes de variáveis a seguir são idênticos em todos os sistemas
+      ANSI C:
+      vejaumnomesuperhiperlongol234567
+      vejaumnomesuperhiperlongol234568
+      l) Verdadeiro ou falso: Um programa em C que imprime três linhas de saída deve conter
+      três instruções printf. 
+*/
+
 
 /* 2.3 Escreva uma instrução simples em  para realizar cada um dos pedidos que se seguem: 
       a) Declare do tipo int as variáveis c, estaVariavel, q76354 e numero.
@@ -73,9 +83,175 @@
       printf("C e igual ou menor do que 7\n");
 */
 
+/* 2.7 Identifique e corrija os erros em cada uma das instruções a seguir (Nota: pode haver mais de
+       um erro por instrução):
+      a) scanf("d", valor);
+      b) printf("O produto de %d e %â e %d"\n, x, y) ;
+      c) primeiroNumero + segundoNumero = somaDosNumeros
+      d) if (numero => maior)
+      maior == numero;
+      f) Scanf ("%á", umlnteiro) ;
+      g) printf("0 resto de %d dividido por %â e\n", x, y, x % y);
+      h) if (x = y);
+      printf(%d e igual a %d\n", x, y);
+      i)
+      print("A soma e %d\n, " x + y) ;
+      j) Printf("O valor fornecido e: %d\n, &valor);
+*/
+
+/* 2.8 Preencha as lacunas em cada uma das expressões a seguir:
+      a) ________________ são usados para documentar um programa e melhorar sua legibilidade.
+      b) A função usada para imprimir informações na tela é ________________.
+      c) Uma instrução do C para a tomada de decisões é ________________.
+      d) Normalmente, os cálculos são realizados por instruções ________________.
+      e) A função ________________ fornece ao programa os valores digitados no teclado.
+*/
+
+/* 2.9 Escreva uma única instrução ou linha em C que realize cada um dos pedidos seguintes:
+      a) Imprima a mensagem "Entre com dois números".
+      b) Atribua o produto das variáveis beca variável a.
+      c) Informe que o programa realiza um exemplo de cálculo de folha de pagamento (i.e., use
+      um texto que ajude a documentar um programa).
+      d) Forneça ao programa três valores inteiros digitados no teclado e coloque esses valores nas
+      variáveis inteiras a, b e c.
+*/
+
+/* 2.10 Diga se cada uma das expressões a seguir é verdadeira ou falsa. Explique suas respostas, a)
+      Os operadores em C são calculados da esquerda para a direita.
+      b) Todos os nomes de variáveis a seguir são válidos: _barra_inf erior, m928134, t5, j7,
+      suas_vendas, total_sua_conta, a, b, c, z e z2.
+      c) A instrução printf (" a = 5;") ; é um exemplo típico de instrução de atribuição.
+      d) Uma expressão aritmética válida em C e sem parênteses é calculada da esquerda para a
+      direita.
+      e) Todos os nomes de variáveis a seguir são válidos: 3g, 87, 67h2, h22 e 2h.
+*/
+
+/* 2.11 Preencha as lacunas de cada uma das expressões a seguir:
+      a) Que operações aritméticas estão no mesmo nível de precedência que a multiplicação? .
+      b) Quando os parênteses são aninhados, que conjunto de parênteses de uma expressão
+      aritmética é calculado em primeiro lugar? .
+      c) O local da memória do computador que pode conter valores diferentes em várias ocasiões
+      ao longo da execução de um programa é chamado.
+*/
+
+/* 2.12 O que é impresso quando cada uma das instruções seguintes da linguagem C é executada? Se nada for impresso, responda "nada". Admita x = 2ey = 3.a) printf("%d", x);
+      b) printf("%d", x + x);
+      c) printf ("x=") ;
+      d) printf("x=%d", x) ;
+      e) printf("%ã - %â", x + y, y + x);
+      f) z = x + y;
+      g) scanf("%ã%ã", &x, &y);
+      h) printf("x + y = %ã", x + y);
+      i) printf("\n");
+*/
+
+/* 2.13 Quais das instruções seguintes em C, se houver alguma, contêm variáveis envolvidas com leitura destrutiva?
+      a) scanf("%d%d%d%d%d", &b, &c, &d, &e, &f);
+      b) p = i + j+ k + 7;
+      c) printf("Leitura destrutiva");
+      d) printf("a = 5");
+*/
+
+/* 2.14 Dada a equação y = ax 3 + 7, qual das instruções em C a seguir, se houver alguma, são
+      corretas para ela? a)y = a*x*x*x + 7;
+      b)y = a*x*x* (x+7);
+      c) y = (a * x) * x * (x + 7) ;
+      d) y = (a * x) * x * x + 7;
+      e) y = a * (x * x * x) + 7; f)y = a*x* (x * x + 7);
+*/
+
+/* 2.15 Diga a ordem de cálculo dos operadores em cada uma das instruções em C a seguir e mostre
+      o valor de x depois que cada instrução for executada.
+      a)x = 7 + 3*6/2-l
+      b)x = 2%2 + 2*2-2/2;
+      c) x = (3 * 9 * (3 + (9*3/ (3) ) ) );
+*/
+
+/* 2.16 Escreva um programa que peça ao usuário para digitar dois números, obtenha-os do usuário e
+   imprima a soma, o produto, a diferença, o quociente e o resto da divisão dos dois números.
+*/
+
+/* 2.17 Escreva um programa que imprima do número 1 ao 4 na mesma linha. Escreva o programa
+      usando os seguintes métodos:
+      a) Usando uma instrução printf sem especificadores de conversão.
+      b) Usando uma instrução printf com
+      c) Usando quatro instruções printf.
+*/
+
+/* 2.18 Escreva um programa em C que peça ao usuário para fornecer dois números inteiros,
+      obtenha-os do usuário e imprima o maior deles seguido das palavras "e maior". Se os
+      números forem iguais, imprima a mensagem "Estes números sao iguais". Use a instrução if
+      somente na forma de seleção simples que você aprendeu neste capítulo.
+*/
+
+/* 2.19 Escreva um programa em C que receba três números inteiros diferentes digitados no teclado
+   e imprima a soma, a média, o produto, o menor e o maior desses números. Use a instrução if
+   somente na forma ensinada neste capítulo. A tela de diálogo deve aparecer como se segue:
+
+   Entre com três inteiros diferentes: 13 27 14
+   A soma e 54
+   A media e 18
+   O produto e 4914
+   O menor e 13
+   O maior e 27
+*/
+
+/* 2.20 Escreva um programa que leia o raio de um círculo e imprima seu diâmetro, o valor de sua
+   circunferência e sua área. Use o valor constante de 3,14159 para "pi". Faça cada um destes
+   cálculos dentro da instrução (ou instruções) printf e use o especificador de conversão %f
+   (Nota: Neste capítulo, analisamos apenas variáveis e constantes inteiras. No Capítulo 3
+   analisaremos números de ponto flutuante, i.e., valores que podem possuir pontos decimais.)
+*/
+
 #include <stdio.h>
 
-// 2.3 
+// Resolve o exercício 2.1 
+int exercicio2_1() {
+   /*
+    a) Todos os programas em C começam sua execução com a função main().
+    b) {} Determina o início e fim do corpo de uma função.
+    c) Todas as instruções terminam com um ;
+    d) A função printf da biblioteca padrão exibe informações na tela.
+    e) A sequência de escape \n representa o caractere de nova linha que faz com que o cursor
+       se posicione no início da próxima linha na tela.
+    f) A função scanf da biblioteca padrão é utilizada para obter dados do teclado.
+    g) O especificador de conversão %d é usado em uma string de controle de formato scanf para indicar
+       que a impressão (saída) de um inteiro pelo programa.
+    h) Sempre que um valor novo é colocado em uma posição da memória, ele substitui o valor anterior ali presente.
+       Esse processo é conhecido como leitura destrutiva.
+    i) Quando um valor é lido de uma posição na memória, ele é preservado, isso é chamado de leitura não destrutiva.
+    j) A instrução if é usada na tomada de decisões.
+   */
+
+  return 0;
+}
+
+// Resolve o exercício 2.2
+int exercicio2_2() {
+   /*
+    a) Falso, pois a instrução printf inicia a partir de onde o cursor estar posicionado, por isso utilizar a sequência
+       de escape \n é uma boa prática de programação.
+    b) Falso. Os comentários não são lidos.
+    c) Verdadeiro.
+    d) Verdadeiro.
+    e) Falso. Elas podem receber uma atribuição em uma outra linha que não seja a da sua declaração.
+    f) Falso. o C é uma linguagem case-sensitive, distingue letras maiúsculas de menúsculas.
+    g) Falso. As declarações devem estar depois de qualquer instrução executável e aparecer depois da chave esquerda
+       corpo de uma função.
+    h) Falso. Na função scanf precisa, pois o e-comercial é um operador utilizado para indicar o endereço de memória para qual
+       a variável foi alocada.
+    i) Verdadeiro.
+    j) Falso. Os operadores aritméticos * / e % possuem o mesmo nível de precedência, todos eles prioritários em relação
+       ao + e -.
+    k) Falso. O indicado são apenas 31 caracteres.
+    l) Falso. Um programa pode ter 3 linhas de saídas utilizando apenas um único printf, por tanto que faça uso do
+       da sequência de escape \n.
+   */
+
+   return 0;
+}
+
+// Resolve o exercício 2.3
 int exercicio2_3() {
    int a, estaVariavel, q76354, numero;
 
@@ -105,8 +281,8 @@ int exercicio2_3() {
    return 0;
 }
 
-// 2.4 e 2.5
-int exercicio2_4() {  // Calcula o produto de 3 números inteiros
+// Resolve os exercícios 2.4 e 2.5
+int exercicio2_4() {  
    int x, y, z, resultado;
 
    printf("Digite 3 número inteiros e obtenha o produto: \n");
@@ -117,8 +293,8 @@ int exercicio2_4() {  // Calcula o produto de 3 números inteiros
    printf("Resultado: %d\n", resultado);
 }
 
-// 2.6
-int exercicio2_5() {
+// Resolve o exercício 2.6
+int exercicio2_6() {
    int numero1 = 5, numero2 = 3, c;
 
    printf("O valor é %d\n", numero1);
@@ -137,11 +313,112 @@ int exercicio2_5() {
    return 0;
 }
 
-int main() {
-    
-   exercicio2_3();
-   exercicio2_4();
-   exercicio2_5();
+// Corrige a sintaxe das instruções/Resolve o exercício 2.7
+int exercicio2_7() { 
+   int valor, x = 5, y = 3, result = 0, numero, numero1, numero2, maior, umInteiro = 0;
 
+   scanf("%d", &valor);
+
+   printf("O produto de %d e %d é: %d\n", x, y, result);
+
+   result = numero1 + numero2;
+
+   if (numero >= maior) {
+      maior = numero;
+   }
+
+   scanf("%d", &umInteiro);
+
+   result = x % y;
+   printf("0 resto de %d dividido por %d é\n", x, y);
+
+   if (x = y) {
+      printf("%d é igual a %d\n", x, y);
+   }
+
+   printf("A soma é %d + %d\n", x, y);
+
+   printf("O valor fornecido é: %d\n", valor);
+
+   return 0;
+}
+
+// Resolve o exercício 2.8
+int exercicio2_8() {
+   /*
+   a) Comentários
+   b) printf
+   c) if
+   d) aritmeticas
+   e) scanf
+   */
+   return 0;
+}
+
+// Resolve o exercício 2.9
+int exercicio2_9() {
+   int a, b, c, d;
+
+   // a)
+   printf("Entre com dois números: ");
+   scanf("%d %d", &b, &c);
+
+   // b)
+   a = b * c;
+
+   // c)
+   // O programa realiza um exemplo de cálculo de folha de pagamento
+
+   // d)
+   scanf("%d %d %d", &a, &b, &c);
+
+   return 0;
+}
+
+// Resolve o exercício 2.10
+int exercicio2_10() {
+   /*a) Verdadeiro.
+     b) Falso. Variáveis não podem conter espaçamento.
+     c) Falso. Não é um exemplo típico de uma instrução de atribuição, é apenas uma instrução de impressão que mostra na tela
+        a representação de uma atribuição simples.
+     d) Falso. Ela é calculada e acordo com a ordem de precedência dos operadores.
+     e) Falso. A maioria desses nomes são inválidos, os nomes de variáveis não podem começar com números.
+   */
+
+   return 0;
+}
+
+// Resolve o exercício 2.11
+int exercicio2_11() {
+   /*
+   a) Divisão e modulo.
+   b) O mais interno.
+   c) Endereço de memória.
+   */
+}
+
+int exercicios2_12() {
+   /*
+   a) 2
+   b) 4
+   c) x = 
+   d) x = 2
+   e) mensagem de erro/alerta/nada
+   f) nada
+   g) nada
+   h) nada
+   i) nada
+   */
+}
+
+int exercicio2_13() {
+   /* A leitura destrutiva ocorre nas letras a, b e d.*/
+}
+
+
+int main() {
+   int x = 2, y = 3;
+   printf("\n");
+  
    return 0;
 }
