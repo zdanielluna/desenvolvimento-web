@@ -474,6 +474,7 @@ int exercicio2_17() {
    return 0;
 }
 
+// Resolve o exercício 2.18
 int exercicio2_18() {
    int a, b;
 
@@ -491,6 +492,7 @@ int exercicio2_18() {
    return 0;
 }
 
+// Resolve o exercício 2.19 
 int exercicio2_19() {
    int x, y, z, soma, produto, media, menor, maior;
 
@@ -503,6 +505,7 @@ int exercicio2_19() {
 
    printf("Soma = %d\nProduto = %d\nMedia = %d\n", soma, produto, media);
 
+   // Corrigir
    if (z > y && z > x) {
       maior = z;
    } else {
@@ -522,6 +525,7 @@ int exercicio2_19() {
    return 0;
 }
 
+// Resolve o exercício 2.20
 int exercicio2_20() {
    float pi = 3.14159 , raio, diametro, circunferencia, area = pi * (raio * raio);
 
@@ -538,8 +542,82 @@ int exercicio2_20() {
    return 0;
 }
 
+// Resolve o exercício 2.21
+int exercicio2_21() {
+   // Quadrado
+   printf("*******");
+   printf("*\n*      *\n*      *\n*      *\n*      *\n*      *\n*");
+   printf("*******\n\n");
+   
+   // Círculo
+   printf("   * * * *");
+   printf("   ");
+   printf("\n *         *\n*           *\n*           *\n*           *\n *         *\n   * * * *\n\n ");
+
+   // Seta
+   printf("     *\n");
+   printf("     ***\n");
+   printf("    *****");
+   printf("\n      *\n      *\n      *\n      *\n      *\n      *\n\n\n");
+
+   // Losango
+   printf("         *\n");
+   printf("       *   *\n");
+   printf("     *       *\n");
+   printf("   *           *\n");
+   printf(" *               *\n");
+   printf("   *           *\n");
+   printf("     *       *\n");
+   printf("       *   *\n");
+   printf("         *\n");
+
+   return 0;
+}
+
+// Resolve o exercício 2.22
+int exercicio2_22() {
+   // Um triângulo
+
+   return 0;
+}
+
+// Resolve o exercício 2.23
+int exercicio2_23() {
+   int a, b, c, d, e, maior, menor;
+
+   printf("Digite 5 números inteiros: ");
+   scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+   if (a > b && a > c && a > d && a > e) {
+      maior = a;
+   } else if (a < b && a < c && a < d && a < e){
+      menor = a;
+   } if (b > a && b > c && b > d && b > e) {
+      maior = b;
+   } else if (b < a && b < c && b < d && b < e){
+      menor = b;
+   } if (c > a && c > b && c > d && c > e) {
+      maior = c;
+   } else if(c < a && c < b && c < d && c < e) {
+      menor = c;
+   } if (d > a && d > b && d > c && d > e) {
+      maior = d;
+   } else if(d < a && d < b && d < c && d < e){
+      menor = b;
+   } if (e > a && e > b && e > c && e > d) {
+      maior = e;
+   } else if (e < a && e < b && e < c && e < d){
+      menor = e;
+   }
+
+   printf("Maior número: %d\n", maior);
+   printf("Menor numéro: %d\n", menor);
+
+   return 0;
+}
+
 int main() {
-   exercicio2_20();
+   exercicio2_23();
    
    return 0;
 }
