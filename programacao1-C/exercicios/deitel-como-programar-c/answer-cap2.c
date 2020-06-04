@@ -616,8 +616,172 @@ int exercicio2_23() {
    return 0;
 }
 
+// Resolve o exercício 2.24
+int exercicio2_24() {
+   int numero = 5;
+
+   printf("Informe um número:\n");
+   scanf("%d", &numero);
+
+   if (numero % 2 == 0) {
+      printf("O número %d é par\n", numero);
+   }
+   else {
+   printf("O número %d é ímpar\n", numero);
+   }
+
+   return 0;
+}
+
+// Resolve o exercício 2.25
+int exercicio2_25() {
+   printf("DDDDDDDD\n");
+   printf("D      D\nD      D\nD     D\nD D D\n\n\n");
+
+   printf("     A\n");
+   printf("   A   A\n");
+   printf("  A     A\n");
+   printf(" A A A A A\n");
+   printf("A         A\n");
+
+   return 0;
+}
+
+// Resolve o exercício 2.26
+int exercicio2_26() {
+   int numA = 100, numB = 3;
+
+   if (numA % numB == 0) {
+      printf("O número %d é múltiplo de %d", numA, numB);
+   } else {
+      printf("O número %d não é múltiplo de %d", numA, numB);
+   }
+
+   return 0;
+}
+
+// Resolve o exercício 2.27
+int exercicio2_27() {
+   printf("* * * * * * * *\n * * * * * * * *\n* * * * * * * *\n * * * * * * * *\n* * * * * * * *\n * * * * * * * *\n* * * * * * * *\n * * * * * * * *");
+
+   return 0;
+}
+
+// Resolve o exercício 2.28
+int exercicio2_28() {
+   /* Erro fatal: O programa é encerrado imediatamente sem ter sucesso na realização da sua tarefa.
+
+      Erro não fatal: O programa é executado até o final, produzindo frequentemente resultados incorretos. 
+
+      Erro fatal é preferível, pois é melhor ter o programa encerrado sem realizar tarefas incorretas.
+      No primeiro caso, podemos corrigir o programa antes que ele performe de forma indesejada.
+   */
+
+   return 0;
+}
+
+// Resolve o exercício 2.29
+int exercicio2_29() {
+   printf("%d\n", 'A');
+   printf("%d\n", 'B');
+   printf("%d\n", 'C');
+   printf("%d\n", 'a');
+   printf("%d\n", 'b');
+   printf("%d\n", 'c');
+   printf("%d\n", '0');
+   printf("%d\n", 12);
+   printf("%d\n", '$');
+   printf("%d\n", '*');
+   printf("%d\n", '+');
+   printf("%d\n", ' ');
+   
+   return 0;
+}
+
+// Resolve o exercício 2.30
+int exercicio2_30() {
+   int numero, a, b, c, d, e;
+
+   printf("Digite um número de cinco dígitos: \n");
+   scanf("%d", &numero);
+
+   a = numero / 10000;
+   b = (numero / 1000) % 10;
+   c = (numero / 100) % 100 % 10;
+   d = (numero / 10) % 1000 % 100 % 10;
+   e = (numero / 1) % 10000 % 1000 % 100 % 10;
+
+   printf("%d   %d   %d   %d   %d\n", a, b, c, d, e);
+
+   return 0;
+}
+
+int exercicio2_31() {
+   int zero = 0, um = 1, dois = 2, tres = 3, quatro = 4, cinco = 5, seis = 6, sete = 7, oito = 8, nove = 9, dez = 10;
+   int zero2, zero3, um2, um3, dois2, dois3, tres2, tres3, quatro2, quatro3, cinco2, cinco3, seis2, seis3, sete2, sete3, oito2, oito3, nove2, nove3, dez2, dez3;
+
+   zero2 = zero * zero;
+   zero3 = zero * zero * zero;
+
+   um2 = um * um;
+   um3 = um * um * um;
+
+   dois2 = dois * dois;
+   dois3 = dois * dois * dois;
+
+   tres2 = tres * tres;
+   tres3 = tres * tres * tres;
+
+   quatro2 = quatro * quatro;
+   quatro3 = quatro * quatro * quatro;
+
+   cinco2 = cinco * cinco;
+   cinco3 = cinco * cinco * cinco;
+
+   seis2 = seis * seis;
+   seis3 = seis * seis * seis;
+
+   sete2 = sete * sete;
+   sete3 = sete * sete * sete;
+
+   oito2 = oito * oito;
+   oito3 = oito * oito * oito;
+
+   nove2 = nove * nove;
+   nove3 = nove * nove * nove;
+
+   dez2 = dez * dez;
+   dez3 = dez * dez * dez;
+
+   printf("----------------------------\n");
+   printf(" Número  | Quadrado  | Cubo\n");
+   printf("----------------------------\n");
+   printf("   %d     |     %d     |  %d\n", zero, zero2, zero3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d     |  %d\n", um, um2, um3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d     |  %d\n", dois, dois2, dois3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d     |  %d\n", tres, tres2, tres3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d    |  %d\n", quatro, quatro2, quatro3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d    |  %d\n", cinco, cinco2, cinco3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d    |  %d\n", seis, seis2, seis3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d    |  %d\n", sete, sete2, sete3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d    |  %d\n", oito, oito2, oito3);
+   printf("----------------------------\n");
+   printf("   %d     |     %d    |  %d\n", nove, nove2, nove3);
+   printf("----------------------------\n");
+   printf("   %d    |     %d   |  %d\n", dez, dez2, dez3);
+   
+}
+
 int main() {
-   exercicio2_23();
+   exercicio2_31();
    
    return 0;
 }
