@@ -23,7 +23,7 @@ int main() {
     return 0; */
 
    // Utilização de flag
-   int count = 0, nota = 0, total = 0;
+   int count = 0, total = 0, nota;
    float media = 0;
 
    printf("Entre com a nota: | Digite -1 para sair: \n" );
@@ -38,8 +38,8 @@ int main() {
    }
 
    if (count != 0) {
-       media = total/count;
-       printf("A média da turma é: %f", media);
+       media = (float) total/count;
+       printf("A média da turma é: %.2f\n", media);
    } else printf("Nenhuma nota foi inserida!");
 
    return 0;
