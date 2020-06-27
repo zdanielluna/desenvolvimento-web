@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 int main() {
-    int count = 0, total = 0, nota = 0, media = 0;
+    /* int count = 0, total = 0, nota = 0, media = 0;
 
     while (count < 10) {
         printf("Entre com a nota: \n");
@@ -20,5 +20,27 @@ int main() {
     media = total/10;
     printf("A média da turma é: %d\n", media);
 
-    return 0;
+    return 0; */
+
+   // Utilização de flag
+   int count = 0, nota = 0, total = 0;
+   float media = 0;
+
+   printf("Entre com a nota: | Digite -1 para sair: \n" );
+   scanf("%d", &nota);
+
+   while (nota != -1) {
+       total += nota;
+       count ++;
+
+       printf("Entre com a nota: | Digite -1 para sair: \n" );
+       scanf("%d", &nota);
+   }
+
+   if (count != 0) {
+       media = total/count;
+       printf("A média da turma é: %f", media);
+   } else printf("Nenhuma nota foi inserida!");
+
+   return 0;
 }
