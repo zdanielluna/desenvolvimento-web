@@ -44,7 +44,7 @@ function calculaMediaPonderada(aluno, indiceMaiorNota) {
     return soma / peso
 }
 
-function imprimirResultadoConsole(aluno) {
+function imprimeResultadoConsole(aluno) {
     return console.log(`${aluno.notas[3] >= 5 ? 'APROVADO' : 'REPROVADO'}
                         Nome: ${aluno.nome} 
                         Código: ${aluno.codigo}
@@ -67,7 +67,7 @@ function buscaAluno(codigo) {
     let media = calculaMediaPonderada(aluno, indiceMaiorNota)
     aluno.notas.push(media)
 
-    return imprimirResultadoConsole(aluno)
+    return imprimeResultadoConsole(aluno)
 }
 
 buscaAluno(5)
