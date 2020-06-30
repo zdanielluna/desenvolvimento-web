@@ -1,18 +1,29 @@
 function progressaoAritmetica(n, a1, r) {
-    let soma = 0
+    let somatorio = 0
     let termos = []
 
-    termos.push(a1)
-
-    for (let i = 0; i < n - 1; i++) {
-        termos.push((a1 += r))
-        soma += termos[i]
+    for (let i = 0; i < n; i++) {
+        termos.push(a1 + r * i)
+        somatorio += termos[i]
     }
-
-    soma += termos[termos.length - 1]
-    termos.push(`Somátorio: ${soma}`)
+    termos.push(`Somátorio: ${somatorio}`)
 
     return termos
 }
 
-console.log(progressaoAritmetica(10, 1, 2))
+console.log('PA\n' + progressaoAritmetica(10, 1, 2))
+
+function progressaoGeometrica(n, a1, r) {
+    let termos = []
+    let somatorio = 0
+
+    for (let i = 0; i < n; i++) {
+        termos.push(a1 * r ** i)
+        somatorio += termos[i]
+    }
+    termos.push(`Somatório: ${somatorio}`)
+
+    return termos
+}
+
+console.log('\nPG\n' + progressaoGeometrica(7, 2, 2))
