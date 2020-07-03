@@ -3,37 +3,36 @@
     - Impedir a variação do this */
 
 let soma = function (a, b) {
-  return a + b
+    return a + b
 }
 
 // Sintaxe básica da arrow function
 soma = (a, b) => {
-  return a + b
+    return a + b
 }
 
 // Sintaxe com um parâmetro e retorno implícito
 soma = (a) => a + 0
 
 function helloWorld() {
-  return "helloWorld"
+    return 'helloWorld'
 }
 
 // Sintaxe "sem parâmetros"
-helloWorld = (_) => "Hello World"
+helloWorld = (_) => 'Hello World'
 
-helloWorld = () => "Hello World"
+helloWorld = () => 'Hello World'
 
-// This é "amarrado" ao contexto da arrow function e não varia
 function Pessoa() {
-  this.idade = 0
+    this.idade = 0
+    // O this é "amarrado" ao contexto da arrow function e não varia
+    setInterval(() => {
+        // A arrow function é invocada por um temporizador
+        this.idade++
+        console.log(this.idade)
+    }, 1000)
 
-  setInterval(() => {
-    // A arrow function é invocada por um temporizador
-    this.idade++
-    console.log(this.idade)
-  }, 1000)
-
-  console.log(this === global)
+    console.log(this === global)
 }
 
 new Pessoa()
