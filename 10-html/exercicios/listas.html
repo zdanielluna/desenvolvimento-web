@@ -1,0 +1,82 @@
+<h1>Listas Ordenadas</h1>
+<h4>Aprovados:</h4>
+<ol>
+    <li>Daniel</li>
+    <li>Lana</li>
+    <li>Lara</li>
+    <li>Laiane</li>
+</ol>
+
+<h1>Listas Não Ordenadas</h1>
+<h4>Compras:</h4>
+<ul>
+    <li>Batata</li>
+    <li><del>Sorvete </del></li>
+    <li>Galinha</li>
+    <li><del>Peixe</del></li>
+    <li>Ovo</li>
+</ul>
+
+<h1>Listas de Definição</h1>
+<h3>Principais Termos do Glosário de Cloud Computing</h3>
+<dl>
+    <dt>BaaS</dt>
+    <dd>Backend como Serviço</dd>
+    <dt>IaaS</dt>
+    <dd>Infraestrutura Como Serviço</dd>
+    <dt>PaaS</dt>
+    <dd>Plataforma como Serviço</dd>
+    <dt>SaaS</dt>
+    <dd>Software como Serviço</dd>
+</dl>
+
+<h1>Listas Aninhadas</h1>
+<h3>Projeto</h3>
+<ul class="tree">
+    <li>
+        <span pasta>backend</span>
+        <ul>
+            <li>
+                <span pasta>app</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>cliente.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span pasta>config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span pasta>frontend</span>
+        <ul>
+            <li>
+                <span pasta>public</span>
+                <ul>
+                    <li>app.js</li>
+                    <li>app.css</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" />
+
+<script>
+    const listas = document.querySelectorAll('[pasta]').forEach((pasta) => {
+        pasta.onclick = function (e) {
+            const ul = pasta.nextElementSibling
+            const displayAtual = ul.style.display
+            ul.style.display = displayAtual === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
