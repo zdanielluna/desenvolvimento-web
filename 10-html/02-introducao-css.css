@@ -1,0 +1,19 @@
+h1 {
+    font-size: larger;
+    color: blueviolet;
+}
+
+.fundoVermelho {
+    background-color: #ff0000;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+#textoPrincipal {
+    font-style: italic;
+    font-size: 40px;
+    background-color: #444;
+    color: #fff;
+}
