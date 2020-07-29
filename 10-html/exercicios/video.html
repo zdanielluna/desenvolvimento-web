@@ -1,31 +1,21 @@
 <div>
-    <video
-        wm-video
-        id="meuVideo"
-        width="815"
-        height="450"
-        controlsList="nodownload"
-    >
+    <video dn-video id="meuVideo" width="815" height="450">
         <source
             src="http://files.cod3r.com.br/curso-web/video.mp4"
             type="video/mp4"
         />
     </video>
 
-    <div wm-progresso="meuVideo" class="progresso">
+    <div dn-progresso="meuVideo" class="progresso">
         <div></div>
     </div>
 </div>
 
 <div>
-    <button
-        onclick="document.querySelector('[wm-video]').play(), barraInterval = setInterval(preencherBarra, 1000) "
-    >
+    <button dn-inicio="meuVideo">
         Play
     </button>
-    <button
-        onclick="document.querySelector('[wm-video]').pause(), clearInterval(barraInterval) "
-    >
+    <button dn-pause="meuVideo">
         Pause
     </button>
 </div>
@@ -46,20 +36,23 @@
         font-size: 14px;
         width: 0;
     }
-
-
 </style>
 
 <script>
-    const barraProgresso = document.querySelector('[wm-progresso] > div')
-    let largura = 0
-    function preencherBarra() {
-        validarBarra()
-        largura += 18
-        barraProgresso.style.width = largura + 'px'
+    function configuraVideo(id) {
+        const video = document.getElementById(id)
+        video.oncontextmenu = () => false
+
+        document.querySelector(`[dn-inicio=${id}]`).onclick = () => video.play()
+        document.querySelector(`[dn-pause=${id}]`).onclick = () => video.pause()
+
+        setInterval(() => {
+            let percentual = (video.currentTime / video.duration) * 100
+            let valorDiv = document.querySelector(`[dn-progresso=${id}] > div`)
+            valorDiv.style.width =`${percentual}%`
+            valorDiv.innerHTML = `${percentual.toFixed(1)}%`
+        }, 1000)
     }
 
-    function validarBarra() {
-        if (largura >= 790) clearInterval(barraInterval)
-    }
+    configuraVideo('meuVideo')
 </script>
