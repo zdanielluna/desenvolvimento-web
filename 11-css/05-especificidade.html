@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Especificidade CSS</title>
+        <style>
+            /* Classe é mais específico que a tag */
+            .observacao {
+                background-color: blueviolet;
+                color: rgb(0, 0, 0);
+                padding: 60px;
+                font-size: 40px;
+                background: linear-gradient(
+                    to right,
+                    rgb(103, 86, 238),
+                    rgb(172, 178, 230)
+                );
+            }
+
+            p {
+                background-color: blueviolet;
+                color: rgb(0, 0, 0);
+                padding: 60px;
+                font-size: 40px;
+            }
+
+            p.observacao {
+                background-color: blueviolet;
+                color: rgb(0, 0, 0);
+                padding: 60px;
+                font-size: 40px;
+                background: linear-gradient(to right, red, yellow);
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="observacao">Olha essa observação!!!</p>
+    </body>
+</html>
