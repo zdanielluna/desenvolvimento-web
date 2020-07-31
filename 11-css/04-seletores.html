@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS Selectors</title>
+        <link rel="stylesheet" href="css/tag.css" />
+        <style>
+            /* * {
+                color: rgb(255, 217, 0);
+                background-color: #f77;
+            } */
+
+            /* .tag {
+                color: aqua;
+                background-color:blueviolet
+            } */
+
+            /* #aprovados {
+                color: #ffffff;
+                background-color: black;
+            } */
+
+            /* #aninhado > div {
+                color: rgb(158, 230, 24);
+                background-color: blueviolet;
+            } */
+
+            /* #aninhado section {
+                color: aqua;
+                background-color: black;
+            } */
+
+            /* p + ul {
+                color: #ffffff;
+                background-color: blue;
+            } */
+
+            /* p ~ ol {
+                color: coral;
+                background-color: darkred;
+            } */
+
+            /* [feira] {
+                color: #fff;
+                background-color: #000000;
+            } */
+
+            /* [feira='casa'] {
+                color: #fff;
+                background-color: #000000;
+            } */
+
+            /* [feira='escritorio'] {
+                color: #fff;
+                background-color: #000000;
+            } */
+
+            /* [feira~='escritorio'] {
+                color: #fff;
+                background-color: #000000;
+            } */
+
+            /* [feira*='sa'] {
+                color: #fff;
+                background-color: #000000;
+            } */
+
+            /* span:nth-child(1) {
+                color: #ff0;
+                background-color: #000;
+            } */
+
+            /* section > :nth-child(odd), ul, p {
+                color: rgb(0, 0, 0);
+                background-color: rgb(238, 3, 3);
+            } */
+
+            section > span:nth-of-type(2) {
+                color: rgb(244, 248, 0);
+                background-color: rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="tag">
+            <div class="tag">
+                <p class="tag">1</p>
+                <ul class="tag" feira="casa">
+                    <li>Arroz</li>
+                    <li>Feijão</li>
+                </ul>
+                <ul class="tag" feira="escritorio empresa">
+                    <li>Café</li>
+                    <li>Água</li>
+                </ul>
+                <ol id="aprovados" class="tag">
+                    <li>Maria</li>
+                    <li>Pedro</li>
+                    <li>Ana</li>
+                </ol>
+                <ol id="aprovados" class="tag">
+                    <li>Maria2</li>
+                    <li>Pedro2</li>
+                    <li>Ana2</li>
+                </ol>
+                <div id="aninhado" class="tag">
+                    <div class="tag">
+                        <section class="tag nolabel">
+                            <span class="tag">1</span>
+                            <p class="tag">2</p>
+                            <span class="tag">3</span>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/tag.js"></script>
+    </body>
+</html>
