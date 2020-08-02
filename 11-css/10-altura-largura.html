@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Altura e Largura</title>
+        <style>
+            /* body e html, por padrão, ocupam a largura toda, mas não ocupam a altura completa. Suas alturas modificam de acordo com
+               os valores absolutos da altura dos componentes dentro dele. */
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                font-size: 40px;
+                background-color: coral;
+                height: 100%;
+                margin: 0;
+            }
+
+            div {
+                background-color: seagreen;
+            }
+
+            span {
+                background-color: dodgerblue;
+            }
+
+            span,
+            div {
+                width: 50%;
+                height: 50%;
+                height: 250px;
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>Título</div>
+        <span>Subtítulo</span>
+    </body>
+</html>
