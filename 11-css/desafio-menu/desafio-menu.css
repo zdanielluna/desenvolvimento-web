@@ -1,0 +1,50 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
+.cabecalho {
+    background-color: #000;
+    position: relative;
+    height: 90px;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+.menu ul,
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    padding: 17px;
+    color: #fff;
+}
+
+.menu a:hover {
+    background-color: steelblue;
+    padding: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.autenticacao {
+    right: 50px;
+    top: 40px;
+    color: black
+}
+
+.logo img {
+    position: relative;
+    top: 17px;
+    width: 250px;
+    margin: 10px 0px 5px 0px;
+}
