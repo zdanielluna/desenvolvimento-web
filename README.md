@@ -124,10 +124,3 @@
 ## Banco de Dados Não Relacional
 
 ## Express
-
-
----
-
-# Resumo Prático
-
-*construção*
