@@ -1,5 +1,5 @@
 
-## Variáveis
+# Var, Let e Const
 
 ### Escopo
 
@@ -149,7 +149,7 @@ let filme = 'Your Name'
 
 * Quando declarada fora de um bloco ou função, pode ser acessada de qualquer lugar. (Escopo global)
 * Não respeita o escopo de bloco, quando declarada dentro de um, pode ser acessada de qualquer lugar do script.
-* Respeita o escopo de função, quando declarada dentro de uma, a variável fica visível apenas dentro da função.~~~~
+* Respeita o escopo de função, quando declarada dentro de uma, a variável fica visível apenas dentro da função.
 * Pode ser redeclaradas.
 
 **let e const**
@@ -162,5 +162,5 @@ let filme = 'Your Name'
 
 ### Referências:
 
-* [var, let e const](https://www.w3schools.com/js/js_let.asphttps://www.w3schools.com/js/js_let.asp)
+* [W3Schools - let](https://www.w3schools.com/js/js_let.asp)
 
