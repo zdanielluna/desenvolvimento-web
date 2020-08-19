@@ -24,9 +24,9 @@ p2.falar()
 
 // Objeto a partir de função construtora
 function Personagem(nome, idade, sexo) {
-  const nome = nome
-  let idade = idade
-  let sexo = sexo
+  this.nome = nome
+  this.idade = idade
+  this.sexo = sexo
 
   this.imprimir = () =>
     console.log(
