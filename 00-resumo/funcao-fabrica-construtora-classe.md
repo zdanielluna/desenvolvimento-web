@@ -2,7 +2,7 @@
 
 ## Função Fábrica
 
-É utilizada para fabricar objetos, o retorno de funções deste tipo é um objeto:
+É utilizada para fabricar objetos, o retorno de funções deste tipo é um objeto (nova instância):
 
 ```JavaScript
 function criaPersonagem(nome, idade, genero, raca) {
@@ -64,7 +64,7 @@ function Personagem(nome, idade, genero, raca) {
 }
 ```
 
-Os objetos são instânciados com o operador new
+Os objetos são instânciados com o operador *new*
 
 ```JavaScript
 const geralt = new Personagem('Geralt of Rivia', 150, 'masculino', 'bruxo')
