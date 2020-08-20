@@ -1,13 +1,13 @@
 
 # Var, Let e Const
 
-### Escopo
+## Escopo
 
 * **Escobo Global:** Variáveis declaradas fora de uma função ou bloco.
 * **Escopo de Bloco:** Variáveis declaradas dentro de um bloco de código.
 * **Escopo de Função:** Variáveis declaradas dentro de uma função.
 
-### var
+## var
 
 Quando declarada no escopo global, fica visível para todo o script:
 
@@ -65,7 +65,7 @@ var cor = 'amarelo'
 console.log(cor) // amarelo
 ```
 
-### let e const
+## let e const
 
 A diferença entre elas, é que a const não pode ser redeclarada ou receber um novo valor, pois a const é uma constante 😄
 
@@ -143,7 +143,7 @@ let filme = 'Your Name'
 // Identifier 'filme' has already been declared
 ```
 
-### Resumindo
+## Resumindo
 
 **var**
 
@@ -160,7 +160,7 @@ let filme = 'Your Name'
 * Não podem ser redeclaradas.
 * Let pode receber um novo valor, const não.
 
-### Referências:
+## Referências:
 
 * [W3Schools - let](https://www.w3schools.com/js/js_let.asp)
 
