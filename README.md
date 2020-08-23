@@ -103,6 +103,11 @@
 * CSS Grid
 
 ## Integração: HTML, CSS e JavaScript
+- Seleção de Elementos
+- Acesso a Atributos
+- Modificação do HTML
+- Trabalhando com Eventos
+- Pratica da DOM com o Flappy Bird
 
 ## Ajax
 
