@@ -185,7 +185,7 @@ const notasTurma = escola.flatMap(getNotasTurma)
 console.log(notasTurma) // [ 9.3, 10, 10, 7.5 ]
 ```
 
-##Referências:
+## Referências:
 
 -   https://www.w3schools.com/jsref/jsref_map.asp
 -   https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap
