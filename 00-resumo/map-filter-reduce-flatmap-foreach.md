@@ -133,6 +133,59 @@ const notas = [8.5, 7.2, 9, 3, 2, 10, 9.7, 0, 6.5]
 console.log(media(notas)) // 6.2
 ```
 
+## flatmap()
+
+Concatena os arrays mais internos, formando um único array. É o trabalho em equipe do map() com o concat(). Não faz parte da api padrão do JavaScript.
+
+Na implementação, o flatMap é uma função que recebe uma callback como argumento, e retorna um novo array que contém a concatenação de um array vazio com o array retornado pelo map:
+
+```JavaScript
+Array.prototype.flatMap = function (callback) {
+    return Array.prototype.concat.apply([], this.map(callback))
+}
+```
+
+Pegando as notas das duas turmas e transformando em um único array:
+
+```JavaScript
+const escola = [
+    {
+        nome: 'Turma 1',
+        alunos: [
+            {
+                nome: 'Lana',
+                nota: 9.3,
+            },
+            {
+                nome: 'Hana',
+                nota: 10,
+            },
+        ],
+    },
+    {
+        nome: 'Turma 2',
+        alunos: [
+            {
+                nome: 'Daniel',
+                nota: 10,
+            },
+            {
+                nome: 'Leo',
+                nota: 7.5,
+            },
+        ],
+    },
+]
+
+const getNotasAluno = (aluno) => aluno.nota
+const getNotasTurma = (turma) => turma.alunos.map(getNotasAluno)
+const notas1 = escola.map(getNotasTurma)
+const notasTurma = escola.flatMap(getNotasTurma)
+
+console.log(notasTurma) // [ 9.3, 10, 10, 7.5 ]
+```
+
 ##Referências:
 
 -   https://www.w3schools.com/jsref/jsref_map.asp
+-   https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap
