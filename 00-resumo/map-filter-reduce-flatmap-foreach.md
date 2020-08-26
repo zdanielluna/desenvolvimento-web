@@ -67,8 +67,6 @@ Cria um novo array preenchido com os elementos que passaram no teste colocado na
 
 Não modifica o array original e não executa a função em posições sem valores.
 
-Retorna um array apenas com os esportes que iniciam com a letra B:
-
 Parâmetros:
 
     1º -> Elemento da posição atual do array (obrigatório)
@@ -76,6 +74,8 @@ Parâmetros:
     2º -> O index do elemento atual (opcional)
 
     3º -> O próprio array no qual o elemento atual pertence (opcional)
+
+Retorna um array apenas com os esportes que iniciam com a letra B:
 
 ```JavaScript
 const esportes = [
