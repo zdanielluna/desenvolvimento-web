@@ -6,7 +6,7 @@
 
 *construção...*
 
-# Resumos
+# Revisão
 *construção...*
 
 # Conteúdo
