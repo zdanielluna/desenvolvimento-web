@@ -83,44 +83,6 @@ console.log(Object.assign(carro, carro2))
 */
 ```
 
-**Object.freeze()**
-Congela o objeto e retorna o objeto congelado.
-
--   Impede que novas propriedades sejam adicionadas a ele
--   Impede que propriedades existentes sejam removidas
--   Impede que qualquer configuração seja alterada
-
-Exemplo:
-
-```JavaScript
-console.log(carro2)
-/*
-    {
-        automatico: true,
-        cameraTraseira: true,
-        marca: 'Mitsubishi',
-        modelo: 'L-200',
-        cor: 'Preto',
-        combustivel: 'Diesel'
-    }
-*/
-
-Object.freeze(carro2)
-carro2.cor = 'Azul'
-
-console.log(carro2)
-/*
-    {
-        automatico: true,
-        cameraTraseira: true,
-        marca: 'Mitsubishi',
-        modelo: 'L-200',
-        cor: 'Preto',
-        combustivel: 'Diesel'
-    } 
-*/
-```
-
 ## Referências:
 
 -   https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object
