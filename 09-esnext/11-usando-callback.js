@@ -19,9 +19,9 @@ let nomes = []
 getTurma('A', (alunos) => {
     nomes = nomes.concat(alunos.map((a) => `A: ${a.nome}`))
     getTurma('B', (alunos) => {
-        nomes = nomes.concat(alunos.map((b) => `B: ${b.alunos}`))
+        nomes = nomes.concat(alunos.map((b) => `B: ${b.nome}`))
         getTurma('C', (alunos) => {
-            nomes = nomes.concat(alunos.map((c) => `C: ${c.alunos}`))
+            nomes = nomes.concat(alunos.map((c) => `C: ${c.nome}`))
             console.log(nomes)
         })
     })
