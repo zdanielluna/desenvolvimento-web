@@ -1,5 +1,5 @@
-/* Em Node, um arquivo representa um módulo. O conteúdo de um módulo só está visível para ele mesmo, para que outros 
-   módulos visualizem, é necessário trabalhar com export e import. 
+/* Em NodeJS, um arquivo representa um módulo. O conteúdo de um módulo só está visível para ele mesmo, é necessário exporta-lo para que outros
+   arquivos visualizem-o. 
 */
 
 this.ola = 'Fala Pessoal'
